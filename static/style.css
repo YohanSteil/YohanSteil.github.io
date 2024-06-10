@@ -511,10 +511,16 @@ textarea {
   width: 100%;
 }
 
+.form__buttons {
+  display: flex;
+  justify-content: center;
+}
+
 .form__input {
   width: 100%;
   display: flex;
   padding: 15px 0;
+  align-items: center;
 }
 
 .textZone {
@@ -563,7 +569,7 @@ textarea {
 
 footer {
   margin-top: 20px;
-  height: 100px;
+  height: 50px;
   background-color: var(--extra-light-grey);
   text-align: center;
   color: var(--grey);

@@ -269,21 +269,22 @@
         <div class="contact">
           <div class="contact__center">
             <h3 id="contact">Me contacter</h3>
-
             <div class="contact__form">
-              <form action="">
+              <form action="https://formspree.io/f/mvoeegok" method="post">
                 <div class="form__input">
                   <input
                     type="text"
                     name="name"
                     id="name"
-                    placeholder="nom prénom"
+                    placeholder="Nom Prénom"
+                    required
                   />
                   <input
                     type="email"
                     name="email"
                     id="email"
                     placeholder="Email"
+                    required
                   />
                 </div>
                 <div class="form__input sujet">
@@ -293,37 +294,35 @@
                     name="subject"
                     id="subject"
                     placeholder="Sujet"
+                    required
                   />
                 </div>
                 <div class="textZone">
                   <textarea
                     name="message"
                     id="message"
-                    cols="20"
+                    cols="30"
                     rows="10"
                     placeholder="Votre message"
+                    required
                   ></textarea>
                 </div>
-                <div>
+                <div class="form__buttons">
                   <input
                     class="button un"
                     type="submit"
                     name="submit"
                     id="submit"
-                  /><input
-                    class="button deux"
-                    type="reset"
-                    name="reset"
-                    id="reset"
+                    value="Envoyer"
                   />
                 </div>
               </form>
             </div>
           </div>
         </div>
+
         <footer class="footer">
-          <p>Conçu et crée par Yohan Steil.</p>
-          <p>&copy Tout droits réservés</p>
+          <p>Conçu et crée par Yohan Steil / &copy Tout droits réservés</p>
         </footer>
       </main>
     </div>

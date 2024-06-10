@@ -1,6 +1,5 @@
-
 // const imageSneakers = document.querySelectorAll('.projects__projet__img') ;
-// const connaissanceslink = document.querySelector('.linksheader[href="#knowledge"]') ; 
+// const connaissanceslink = document.querySelector('.linksheader[href="#knowledge"]') ;
 
 // imageSneakers.forEach(image => {
 //     image.addEventListener('click', () => {
@@ -9,15 +8,42 @@
 // })
 
 // connaissanceslink.addEventListener('click', function(event) {
-// event.preventDefault() ; 
+// event.preventDefault() ;
 
 // window.scrollTo({
 //     behavior : 'smooth'
 // })
 //  })
 
-const image = document.querySelectorAll('.image')
+const image = document.querySelectorAll(".image");
 
-image.addEventListener('mouseenter', () => {
-    
-})
+image.addEventListener("mouseenter", () => {});
+
+document
+  .getElementById("contactForm")
+  .addEventListener("submit", function (event) {
+    event.preventDefault(); // Empêche l'envoi par défaut du formulaire
+    // Récupère les données du formulaire
+    const formData = new FormData(this);
+
+    // Envoie les données via fetch (AJAX)
+    fetch("https://formspree.io/f/mvoeegok", {
+      method: "POST",
+      body: formData,
+      headers: {
+        Accept: "application/json",
+      },
+    })
+      .then((response) => {
+        if (response.ok) {
+          alert("Message envoyé !");
+          this.reset(); // Réinitialise les champs du formulaire
+        } else {
+          alert("Erreur lors de l'envoi du message.");
+        }
+      })
+      .catch((error) => {
+        console.error("Erreur:", error);
+        alert("Erreur lors de l'envoi du message.");
+      });
+  });
