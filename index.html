@@ -23,10 +23,10 @@
       <h1 class="header__title">Yohan Steil</h1>
       <p class="header__p">Developpeur web junior</p>
       <div class="header__list">
-        <a href="" class="linksheader">A propos</a>
+        <a href="#aPropos" class="linksheader">A propos</a>
         <a href="#knowledge" class="linksheader">Connaissances</a>
-        <a href="" class="linksheader">Quelques projets</a>
-        <a class="header__list__borderBottom" href="">Contact</a>
+        <a href="#projects" class="linksheader">Quelques projets</a>
+        <a href="#contact" class="header__list__borderBottom">Contact</a>
       </div>
       <div class="headerSocial">
         <div class="header__social">
@@ -68,7 +68,7 @@
         </div>
         <div class="aPropos">
           <div class="aPropos__center">
-            <h2>A propos</h2>
+            <h2 id="aPropos">A propos</h2>
             <h3>Developpeur web</h3>
             <p>
               Ayant effectué une reconversion professionnelle, j'ai enrichi mes
@@ -118,13 +118,40 @@
         </div>
         <div class="projects">
           <div class="projects__center">
-            <h3>Quelques projets</h3>
+            <h3 id="projects">Quelques projets</h3>
             <p>
               Ces projets ont été réalisé pour m'exercer ou pendant ma
-              formation. Tous ces projets sont disponibles sur mon Github sous
-              format vidéo.
+              formation. Tous ces projets sont disponibles sur mon Github avec
+              une vidéo montrant les principales fonctionnalités.
             </p>
             <div class="projects__projet">
+              <div class="projects__projet__total">
+                <div class="projects__projet__img">
+                  <img
+                    class="image"
+                    src="./static/images/page accueil teamUp.png"
+                    alt=""
+                  />
+                </div>
+                <div class="projects__projet__details">
+                  <h4>Team'Up</h4>
+                  <h5>
+                    Site web permettant de mettre en relation des passionnées de
+                    sports.
+                  </h5>
+                  <p>
+                    Ce site à été réalisé en HTML/CSS, Javascript, React,
+                    Typescript coté front. <br />
+                    Pour le backend j'ai utilisé NodeJS, SQL et Express
+                  </p>
+                  <a
+                    href="https://github.com/YohanSteil/TeamUp"
+                    class="btnLink"
+                  >
+                    <button class="btn">Lien vers Github</button>
+                  </a>
+                </div>
+              </div>
               <div class="projects__projet__total">
                 <div class="projects__projet__img">
                   <img
@@ -141,6 +168,12 @@
                     couleur pour un modèle.
                   </h5>
                   <p>Ce site à été réalisé en HTML/CSS et Javascript</p>
+                  <a
+                    href="https://github.com/YohanSteil/Ecommerce-Shoes"
+                    class="btnLink"
+                  >
+                    <button class="btn">Lien vers Github</button>
+                  </a>
                 </div>
               </div>
               <div class="projects__projet__total">
@@ -151,6 +184,12 @@
                   <h4>Site d'un café</h4>
                   <h5>Page de présentation d'un coffee shop</h5>
                   <p>Ce site à été réalisé en HTML/CSS et Javascript</p>
+                  <a
+                    href="https://github.com/YohanSteil/Coffee"
+                    class="btnLink"
+                  >
+                    <button class="btn">Lien vers Github</button>
+                  </a>
                 </div>
               </div>
               <div class="projects__projet__total">
@@ -168,6 +207,12 @@
                     Ce site à été réalisé en Typescript, Javascript, HTML et
                     SCSS et CSS
                   </p>
+                  <a
+                    href="https://github.com/YohanSteil/Convertisseur"
+                    class="btnLink"
+                  >
+                    <button class="btn">Lien vers Github</button>
+                  </a>
                 </div>
               </div>
               <div class="projects__projet__total">
@@ -187,6 +232,12 @@
                   <p>
                     Ce site à été réalisé en Typescript, Javascript, HTML et CSS
                   </p>
+                  <a
+                    href="https://github.com/YohanSteil/Chuck-Norris-quotes"
+                    class="btnLink"
+                  >
+                    <button class="btn">Lien vers Github</button>
+                  </a>
                 </div>
               </div>
               <div class="projects__projet__total border-none">
@@ -201,10 +252,15 @@
                   <h4>Page de news</h4>
                   <h5>Page de news</h5>
                   <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Maxime cum ipsum dolores omnis suscipit, minima harum in
-                    quos neque quidem?
+                    Page de news réalisé dans le cadre d'un challenge sur
+                    Frontend Mentor
                   </p>
+                  <a
+                    href="https://github.com/YohanSteil/News-HomePage"
+                    class="btnLink"
+                  >
+                    <button class="btn">Lien vers Github</button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -212,7 +268,7 @@
         </div>
         <div class="contact">
           <div class="contact__center">
-            <h3>Me contacter</h3>
+            <h3 id="contact">Me contacter</h3>
 
             <div class="contact__form">
               <form action="">
