@@ -8,6 +8,7 @@
 
 html {
   scroll-behavior: smooth;
+  max-height: 50vh;
 }
 
 body {
@@ -77,10 +78,10 @@ body {
 .header__p {
   color: var(--white);
   font-size: 1.5rem;
+  text-align: center;
 }
 
 .header__list {
-  margin-top: 30px;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -331,7 +332,7 @@ body {
 .projects__center,
 .contact__center {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   flex-direction: column;
   max-width: 80%;
 }
@@ -575,54 +576,185 @@ footer {
   color: var(--grey);
 }
 
+/* .activeSplit {
+  display: block;
+  text-align: center;
+}
+
+.activeSplit::after {
+  content: "ssance";
+  display: block; 
+}
+
+.activeSplit::before {
+  content: "Connai-"; 
+} */
 @media screen and (max-width: 1200px) {
   .header__title {
     font-size: 1rem;
   }
-}
-@media screen and (max-width: 1024px) {
-  .header__social {
-    display: none;
-  }
+
   .header__p {
     text-align: center;
   }
+
+  .icon.twitter,
+  .icon.instagram,
+  .icon.github {
+    margin: 2px;
+  }
+
+  .header__img {
+    width: 80%;
+  }
+
+  .projects__projet__img > img {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+  }
+
+  .ulStyle {
+    justify-content: center;
+    gap: 1rem;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .header__p {
+    text-align: center;
+  }
+
+  .ulStyle {
+    gap: 1rem;
+  }
 }
 @media screen and (max-width: 900px) {
-  .aPropos,
-  .connaissances,
-  .projects,
-  .contact {
-    min-width: 100%;
-    padding: 5px;
+  .header__social {
+    display: none;
   }
-  .aPropos__center,
-  .connaissances__center,
-  .projects__center,
+
+  .buttonDownloadCV {
+    padding: 5px;
+    margin-top: 5px;
+  }
+
+  .header__p {
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  .aPropos__center {
+    max-width: 95%;
+  }
+
+  .connaissances__center {
+    max-width: 95%;
+  }
+
   .contact__center {
-    min-width: 100%;
+    max-width: 95%;
+  }
+
+  .projects__center {
+    max-width: 95%;
+  }
+
+  .projects__projet__details > h4 {
+    font-size: 1.1rem;
     padding: 5px;
   }
-  .liStyle {
-    padding: 5px;
+
+  .projects__projet__details > h5 {
+    font-size: 1rem;
+    margin: 5px;
+    padding: 0;
+  }
+
+  .projects__projet__details > p {
+    padding: 0;
+    margin-top: 10px;
+  }
+
+  .buttonCV {
+    padding: 0.1rem;
   }
 }
 @media screen and (max-width: 750px) {
   .header__img {
-    display: none;
+    width: 70%;
   }
   .header__title {
-    font-size: 2rem;
+    font-size: 1rem;
     text-align: center;
   }
   .header__list > a {
     font-size: 1rem;
+  }
+
+  #aPropos {
+    font-size: 3rem;
+    margin: 0.5rem;
+  }
+
+  .aPropos__center > h3 {
+    font-size: 1.5rem;
+  }
+
+  .aPropos__center > p {
+    font-size: 1rem;
+  }
+
+  .connaissances {
+    margin-top: 10px;
+  }
+
+  #knowledge {
+    font-size: 1.5rem;
+  }
+
+  .ulStyle {
+    margin: 0;
+  }
+
+  .projects {
+    margin: 5px;
+  }
+
+  .projects__center > p {
+    font-size: 1rem;
+    margin-bottom: 0;
+  }
+
+  #projects {
+    font-size: 1.5rem;
+  }
+
+  .buttonCV {
+    padding: 0;
   }
 }
 @media screen and (max-width: 600px) {
   footer {
     display: none;
   }
+
+  .header__p {
+    font-size: 0.8rem;
+    margin: 0;
+  }
+
+  .header__list {
+    margin: 5px;
+  }
+
+  .header__list > a {
+    padding: 0.5rem;
+  }
+
+  .buttonCV {
+    padding: 0.1rem;
+    font-size: 0.8rem;
+  }
+
   .projects__projet__total {
     padding: 5px;
     display: flex;
@@ -641,5 +773,12 @@ footer {
   .projects__projet__img {
     width: 80%;
     display: block;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  #knowledgeLink {
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 }
