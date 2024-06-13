@@ -21,12 +21,9 @@
     <header class="header">
       <img class="header__img" src="./static/images/IMG_5446_jpg.JPG" alt="" />
       <h1 class="header__title">Yohan Steil</h1>
-      <p class="header__p">
-        Developpeur web <br />
-        junior
-      </p>
+      <p class="header__p">Developpeur web junior</p>
       <div class="header__list">
-        <a href="#aPropos" class="linksheader">A propos</a>
+        <a href="#aPropos" class="linksheader">Présentation</a>
         <a href="#knowledge" class="linksheader activeSplit" id="knowledgeLink"
           >Connaissances
         </a>
@@ -72,17 +69,22 @@
     <div class="right">
       <main class="main">
         <div class="imgTop">
-          <img src="./static/images/home-office-1867761_1280.jpg" alt="" />
-          <label for="check">
+          <img
+            class="imageTop"
+            src="./static/images/home-office-1867761_1280.jpg"
+            alt=""
+          />
+          <label for="check" id="burgerMenu">
             <input type="checkbox" id="check" />
             <span></span>
             <span></span>
             <span></span>
           </label>
         </div>
+
         <div class="aPropos">
           <div class="aPropos__center">
-            <h2 id="aPropos">A propos</h2>
+            <h2 id="aPropos">Présentation</h2>
             <h3>Developpeur web</h3>
             <p>
               Ayant effectué une reconversion professionnelle, j'ai enrichi mes
@@ -284,7 +286,11 @@
           <div class="contact__center">
             <h3 id="contact">Me contacter</h3>
             <div class="contact__form">
-              <form action="https://formspree.io/f/mvoeegok" method="post">
+              <form
+                action="https://formspree.io/f/mvoeegok"
+                method="post"
+                id="contactForm"
+              >
                 <div class="form__input">
                   <input
                     type="text"
@@ -340,7 +346,7 @@
         </footer>
       </main>
     </div>
-    <script src="static/script.js"></script>
+    <script src="script.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </body>
 </html>
