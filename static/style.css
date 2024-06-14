@@ -829,6 +829,15 @@ footer {
   .btnLink {
     padding-top: 10px;
   }
+
+  .header__list > a {
+    padding: 1.5rem;
+  }
+
+  .header__title {
+    padding: 10px;
+    font-size: 1.5rem;
+  }
 }
 
 @media screen and (max-width: 550px) {
