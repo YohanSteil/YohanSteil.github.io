@@ -32,7 +32,8 @@ body {
 }
 
 .header__img {
-  max-width: 150px;
+ width: 150px;
+  max-height: 150px;
   border-radius: 50%;
   padding-top: 10px;
 }
@@ -909,9 +910,9 @@ label span {
   transition: 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
 }
 
-/* span:nth-of-type(1) {
+span:nth-of-type(1) {
   width: 50%;
-} */
+}
 
 span:nth-of-type(2) {
   width: 100%;
